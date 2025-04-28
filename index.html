@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="1loginweb.css">
+    <body>
+        <div class="login-container">
+            <h2>LOGIN</h2>
+            <div class="input-group">
+                <input type="text" id="username" placeholder="Username">
+            </div>
+            <div class="input-group">
+                <input type="password" id="password" placeholder="Password">
+            </div>
+            <a href="3dasbor.html"> <button class="btn" onclick="login()">Log In</button></a>
+            <div class="register-link">
+                Belum punya akun? <a href="2buatakun.html">Register di sini</a>
+            </div>
+            
+        </div>
+        <script>
+            function login() {
+                let username = document.getElementById("username").value;
+                let password = document.getElementById("password").value;
+                if (username === "admin" && password === "admin") {
+                    alert("Login berhasil!");
+                } else {
+                    alert("Username atau password salah!");
+                }
+            }
+        </script>
+    </body>
+    </html>

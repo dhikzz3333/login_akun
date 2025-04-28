@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buat Akun anda!</title>
+    <link rel="stylesheet" href="2buatakun.css">
+        <div class="register-container">
+            <h2>Buat Akun anda!</h2>
+            <div class="input-group">
+                <input type="text" id="fullname" placeholder="Full Name">
+            </div>
+            <div class="input-group">
+                <input type="email" id="email" placeholder="Email">
+            </div>
+            <div class="input-group">
+                <input type="password" id="password" placeholder="Password">
+            </div>
+            <button class="btn" onclick="register()">Register</button>
+            <div class="login-link">
+                Sudah punya akun? <a href="1loginweb.html">Login di sini</a>
+            </div>
+        </div>
+        <script>
+            function register() {
+                let fullname = document.getElementById("fullname").value;
+                let email = document.getElementById("email").value;
+                let password = document.getElementById("password").value;
+                if (fullname && email && password) {
+                    alert("Akun berhasil dibuat!");
+                } else {
+                    alert("Harap isi semua kolom!");
+                }
+            }
+        </script>
+    </body>
+    </html>
+    

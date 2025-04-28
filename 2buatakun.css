@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url('image/kiluaungu.jpg') no-repeat center center/cover;
+    overflow: hidden;
+}
+.register-container {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 40px;
+    border-radius: 15px;
+    text-align: center;
+    color: white;
+    width: 400px;
+    opacity: 0;
+    transform: translateY(-50px);
+    animation: fadeIn 1s ease-out forwards;
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+.input-group {
+    margin-bottom: 20px;
+    position: relative;
+}
+input {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+input:focus {
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+}
+.btn {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: none;
+    background: purple;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+.btn:hover {
+    background: #9a4caf;
+}
+.login-link {
+    margin-top: 15px;
+    font-size: 16px;
+}
+.login-link a {
+    color: #9a4caf;
+    text-decoration: none;
+}
